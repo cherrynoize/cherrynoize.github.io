@@ -11,10 +11,10 @@ const Main = () => {
   return (
     <main>
       <Routes>
-        <Route path='/gallery' element={<Home/>} />
-        <Route path='/gallery/blog' element={<BlogMain/>} />
-        <Route path='/gallery/contacts' element={<Contacts/>} />
-        <Route path='/gallery/contribute' element={<Contribute/>} />
+        <Route path='/' element={<Home/>} />
+        <Route path='/blog' element={<BlogMain/>} />
+        <Route path='/contacts' element={<Contacts/>} />
+        <Route path='/contribute' element={<Contribute/>} />
       </Routes>
     </main>
   );
