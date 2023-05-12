@@ -1,0 +1,28 @@
+#blog,
+#blog .entry {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+
+#blog {
+  margin-top: calc(var(--nav-btn-height) + 4vh);
+  align-items: center;
+  gap: calc(50vh - var(--nav-btn-height));
+  padding: 5vh;
+}
+
+#blog .entry {
+  align-items: stretch;
+  overflow: hidden;
+}
+
+#blog .entry,
+#blog .entry img {
+  max-width: 100vw;
+  max-height: calc(100vh - var(--nav-btn-height) - 5em);
+}
+
+#blog .entry img {
+  object-fit: cover;
+}

@@ -9,7 +9,6 @@ export default function Footer() {
           Contacts
         </button>
       </Link>
-      <span>&bull;</span>
       <Link to='/contribute'>
         <button className='a'>
           Contribute

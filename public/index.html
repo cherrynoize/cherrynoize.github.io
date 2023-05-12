@@ -7,16 +7,17 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Cyber artwork showcase"
+      content="hacker's nonsense"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/icons/favicon.ico" />
     <link rel="stylesheet" href="%PUBLIC_URL%/style.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/desktop.css" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/mobile.css" />
-    <title>CYBER</title>
+    <link rel="preload" href="%PUBLIC_URL%/defer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="%PUBLIC_URL%/desktop.css" media="(min-width: 1100px)"/>
+    <link rel="stylesheet" href="%PUBLIC_URL%/mobile.css" media="(max-width: 1100px)"/>
+    <title>cherrynoize</title>
   </head>
   <body>
-    <noscript>CYBER needs JavaScript.</noscript>
+    <noscript>My app needs JavaScript.</noscript>
     <div id="root"></div>
   </body>
 </html>
