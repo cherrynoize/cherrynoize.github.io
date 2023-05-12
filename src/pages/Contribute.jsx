@@ -43,8 +43,8 @@ export default function Contacts() {
       </p>
 
       <p>
-        If you want to show your support (or just buy me a
-        Pepsi):
+        In case you wanted to show your support which means buy me a
+        Coke:
       </p>
 
       <WalletAddress token='pypl'>
