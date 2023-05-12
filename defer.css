@@ -42,21 +42,24 @@
   flex-direction: row;
   justify-content: flex-start;
   gap: 1em;
-  padding: 6px 16px;
+  padding: 8px 16px;
+  margin: 4px 0;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 5px;
   font-family: "JetBrains Mono", "Roboto Mono", "Lato", "Helvetica Neue", "Helvetica", "Arial", sans;
-  transition: background .8s, border .8s;
+  transition: background .4s, padding .4s, margin .4s;
   cursor: default;
 }
 
 .address-container:hover {
+  padding: 8px 16px;
+  margin: 4px 0;
   background-color: #333;
-  border: 1px solid #696969;
 }
 
 .address-container > b {
+  font-size: .8em;
   letter-spacing: 1px;
 }
 
