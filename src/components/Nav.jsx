@@ -12,6 +12,11 @@ export default function Nav() {
       <a className="button" target="_blank" href="gallery">
         Gallery
       </a>
+      <Link to="cool-stuff">
+        <button>
+          Cool shit
+        </button>
+      </Link>
       <Link to="blog">
         <button>
           Blog

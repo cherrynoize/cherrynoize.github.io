@@ -1,0 +1,7 @@
+.playground,
+.playground *,
+.playground *:before,
+.playground *:after,
+.playground *:hover {
+    all: unset;
+}

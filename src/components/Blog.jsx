@@ -12,9 +12,10 @@ function toMap(ctx) {
 function Post() {
   return (
     <>
-      <h3>Temporary post</h3>
+      <h3>My blog</h3>
       <p>
-        Hi, this is a temporary post.
+        I mean, I thought it would be cool, just running a blog...
+        but now I realize I've got nothing to say.
       </p>
     </>
   )

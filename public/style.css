@@ -1,6 +1,11 @@
 :root {
-  --main-bg: #282c34;
-  --nav-btn-height: 3vh;
+    --primary: #152326;
+    --main-bg: #282c34;
+    --fg: #b4f4ee;
+    --bg: #b6f6f0;
+    --grey: #2d3236;
+    --light-blue: #61dafb;
+    --nav-btn-height: 3vh;
 }
 
 html, body {
@@ -13,139 +18,139 @@ html, body {
 }
 
 body {
-  background-color: var(--main-bg);
-  color: #dfdfdf;
-  font-size: calc(10px + 2vmin);
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'Arial', 'Helvetica', sans-serif;
+    background-color: var(--main-bg);
+    color: #dfdfdf;
+    font-size: calc(10px + 2vmin);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'Arial', 'Helvetica', sans-serif;
 }
 
 main {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  min-height: 105vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 105vh;
 }
 
 a,
 button.a {
-  color: #61dafb;
+    color: var(--light-blue);
 }
 
 a:not(:hover) {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 button.a {
-  background: none;
-  border: none;
-  padding: 0;
-  font-size: calc(10px + 2vmin);
-  cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: calc(10px + 2vmin);
+    cursor: pointer;
 }
 
 button.a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 nav {
-  z-index: 10;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 2.5vh 3vw;
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2vw;
-  background-color: var(--main-bg);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2.5vh 3vw;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+    background-color: var(--main-bg);
 }
 
 nav button,
 nav a.button {
-  --brdr-color: #cfcfcfdf;
-  --brdr-width: 3px;
-  position: relative;
-  padding: calc(var(--nav-btn-height)/2) 3vw;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 var(--brdr-width) 0;
-  background-color: transparent;
-  color: #cfcfcf;
-  font-size: 19px;
-  font-family: 'DM Sans', 'Ubuntu', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: border-radius .4s;
+    --brdr-color: #cfcfcfdf;
+    --brdr-width: 3px;
+    position: relative;
+    padding: calc(var(--nav-btn-height)/2) 3vw;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0 0 var(--brdr-width) 0;
+    background-color: transparent;
+    color: #cfcfcf;
+    font-size: 19px;
+    font-family: 'DM Sans', 'Ubuntu', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: border-radius .4s;
 }
 
 nav button:hover,
 nav a.button:hover {
-/* border-color: var(--brdr-color); */
-  cursor: pointer;
+    /* border-color: var(--brdr-color); */
+    cursor: pointer;
 }
 
 nav a.button:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 nav button::after,
 nav a.button::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 5%;
-  width: 90%;
-  height: 0;
-  transform: scale(0);
-  transform-origin: center;
-  background-color: var(--brdr-color);
-  opacity: 0;
-  transition: opacity .3s, transform .3s, height .6s;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 0;
+    transform: scale(0);
+    transform-origin: center;
+    background-color: var(--brdr-color);
+    opacity: 0;
+    transition: opacity .3s, transform .3s, height .6s;
 }
 
 nav button:hover::after,
 nav button:focus::after,
 nav a.button:hover::after,
 nav a.button:focus::after {
-  height: var(--brdr-width);
-  opacity: 1;
-  transform: scale(1);
+    height: var(--brdr-width);
+    opacity: 1;
+    transform: scale(1);
 }
 
 footer {
-  z-index: 1;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  margin: 5vh 0 2vh 0;
-  padding: 3vh 0;
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw;
+    z-index: 1;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 5vh 0 2vh 0;
+    padding: 3vh 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
 }
 
 footer,
 footer button,
 footer a {
-  text-transform: lowercase;
+    text-transform: lowercase;
 }
 
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  gap: 0;
-  max-width: 80vw;
-  margin-top: calc(var(--nav-btn-height) + 4vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 0;
+    max-width: 80vw;
+    margin-top: calc(var(--nav-btn-height) + 4vh);
 }
 
 #home.title {
-  max-width: 30vw;
+    max-width: 30vw;
 }
