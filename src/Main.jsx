@@ -12,9 +12,9 @@ const Main = () => {
     <main>
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/blog' element={<BlogMain/>} />
-        <Route path='/contacts' element={<Contacts/>} />
-        <Route path='/contribute' element={<Contribute/>} />
+        <Route path='blog' element={<BlogMain/>} />
+        <Route path='contacts' element={<Contacts/>} />
+        <Route path='contribute' element={<Contribute/>} />
       </Routes>
     </main>
   );
