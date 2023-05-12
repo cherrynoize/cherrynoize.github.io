@@ -16,10 +16,10 @@ button::selection, input::selection {
 .pen h3 {
     position: absolute;
     top: 3vh;
-    left: 2vw;
-    right: 2vw;
+    left: 3vw;
+    right: 3vw;
     margin: 0;
-    padding: 2vh;
+    padding: 2vh 1vw 4vh 1vw;
     border-bottom: 1px solid var(--fg);
     letter-spacing: 3px;
 }

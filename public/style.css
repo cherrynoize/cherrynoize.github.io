@@ -154,3 +154,7 @@ section {
 #home.title {
     max-width: 30vw;
 }
+
+#blog {
+    max-width: 40vw;
+}
