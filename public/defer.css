@@ -22,6 +22,7 @@ button::selection, input::selection {
     padding: 2vh 1vw 4vh 1vw;
     border-bottom: 1px solid var(--fg);
     letter-spacing: 3px;
+    cursor: default;
 }
 
 #blog,

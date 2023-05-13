@@ -73,7 +73,7 @@ nav a.button {
     --brdr-color: #cfcfcfdf;
     --brdr-width: 3px;
     position: relative;
-    padding: calc(var(--nav-btn-height)/2) 3vw;
+    padding: calc(var(--nav-btn-height)/2) 3vw var(--nav-btn-height) 3vw;
     border-style: solid;
     border-color: transparent;
     border-width: 0 0 var(--brdr-width) 0;
