@@ -6,6 +6,8 @@
     --grey: #2d3236;
     --light-blue: #61dafb;
     --nav-btn-height: 3vh;
+    --nav-padding-height: 2.5vh;
+    --nav-padding-width: 3vh;
 }
 
 html, body {
@@ -96,8 +98,8 @@ nav a.button:hover {
     text-decoration: none;
 }
 
-nav button::after,
-nav a.button::after {
+nav :not(.right) button::after,
+nav a.button:not(.right)::after {
     content: '';
     position: absolute;
     bottom: 0;
