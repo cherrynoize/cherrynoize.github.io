@@ -13,6 +13,7 @@ const Main = () => {
     <main>
       <Routes>
         <Route path='/' element={<Home/>} />
+        <Route path='home' element={<Home/>} />
         <Route path='cool-stuff' element={<CoolShit/>} />
         <Route path='blog' element={<BlogMain/>} />
         <Route path='contacts' element={<Contacts/>} />
