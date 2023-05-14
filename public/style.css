@@ -58,13 +58,13 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 2.5vh 3vw;
-    width: 100%;
+    right: 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
     gap: 2vw;
+    padding: var(--nav-padding-height) var(--nav-padding-width);
     background-color: var(--main-bg);
 }
 
