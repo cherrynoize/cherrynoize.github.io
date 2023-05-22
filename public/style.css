@@ -93,7 +93,6 @@ section {
     justify-content: space-evenly;
     align-items: flex-start;
     gap: 0;
-    max-width: 80vw;
     margin-top: calc(var(--nav-btn-height) + 4vh);
 }
 
