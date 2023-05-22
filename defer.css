@@ -14,9 +14,9 @@ header.active #navbar {
 }
 
 .panel-container {
+    position: relative;
     display: flex;
     align-items: flex-start;
-    gap: 10%;
 }
 
 .panel {
@@ -25,6 +25,7 @@ header.active #navbar {
     border: 1px solid var(--bg);
     border-radius: 15px;
     padding: 2vh 2vw;
+    overflow: scroll;
 }
 
 .panel h3 {
@@ -69,7 +70,6 @@ header.active #navbar {
     border-radius: 1px;
     padding: .5em 1.5em;
     margin: 2vh 0;
-    min-height: 33vh;
 }
 
 .caption, .small {
@@ -142,10 +142,16 @@ header.active #navbar {
 .address-container > b {
     font-size: .8em;
     letter-spacing: 1px;
+    user-select: none;
+}
+
+.address-container:active .address-text {
+    color: #212d3b;
+    background-color: #a1bfde;
 }
 
 .address-text {
-    user-select: contain;
+    user-select: all;
 }
 
 .fade-in {
