@@ -43,7 +43,7 @@ export default function Contacts() {
             Coke:
           </p>
           <a target="_blank" rel="noreferrer" href="https://ko-fi.com/cherrynoize">
-            <Address token='pypl'>
+            <Address token='kofi'>
               Ko-fi.com/cherrynoize
             </Address>
           </a>
