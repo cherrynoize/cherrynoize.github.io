@@ -43,9 +43,17 @@ export default function Contacts() {
             Coke:
           </p>
 
-          <WalletAddress token='pypl'>
-            PayPal.me/cherrynoize
-          </WalletAddress>
+          <a target="_blank" rel="noreferrer" href="https://ko-fi.com/cherrynoize">
+            <WalletAddress token='pypl'>
+              Ko-fi.com/cherrynoize
+            </WalletAddress>
+          </a>
+
+          <a target="_blank" rel="noreferrer" href="https://paypal.me/cherrynoize">
+            <WalletAddress token='pypl'>
+              PayPal.me/cherrynoize
+            </WalletAddress>
+          </a>
 
           <WalletAddress token='eth'>
             0x5938C4DA9002F1b3a54fC63aa9E4FB4892DC5aA8
