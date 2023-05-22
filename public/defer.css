@@ -5,11 +5,38 @@ button::selection, input::selection {
     background-color: #a1bfde;
 }
 
-.pen {
+header #navbar {
+    transition: box-shadow .2s;
+}
+
+header.active #navbar {
+    box-shadow: 10px 0 10px 10px #111219b1;
+}
+
+.panel-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10%;
+}
+
+.panel {
     position: relative;
     background-color: var(--primary);
     border: 1px solid var(--bg);
-    border-radius: 10px;
+    border-radius: 15px;
+    padding: 2vh 2vw;
+}
+
+.panel h3 {
+    margin: 0;
+    padding: 3vh 0;
+    border-bottom: 1px solid var(--fg);
+    font-size: 1.1em;
+    letter-spacing: 3px;
+    cursor: default;
+}
+
+.pen {
     padding: 14vh 2vw 7vh 2vw;
 }
 
@@ -18,11 +45,38 @@ button::selection, input::selection {
     top: 3vh;
     left: 3vw;
     right: 3vw;
-    margin: 0;
-    padding: 2vh 1vw 4vh 1vw;
-    border-bottom: 1px solid var(--fg);
-    letter-spacing: 3px;
-    cursor: default;
+}
+
+.panel h5 {
+    font-weight: 300;
+    font-family: 'Ubuntu', 'Lato', 'DM Sans', 'Helvetica Neue', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+.panel p {
+    font-size: .8em;
+    font-weight: 300;
+    font-family: 'Ubuntu', 'Lato', 'DM Sans', 'Helvetica Neue', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: .2px;
+}
+
+.caption {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: justify;
+    border: 1px solid #cccccc7b;
+    border-radius: 1px;
+    padding: .5em 1.5em;
+    margin: 2vh 0;
+    min-height: 33vh;
+}
+
+.caption, .small {
+    font-size: .7em;
+    font-weight: 300;
+    font-family: 'Ubuntu', 'Lato', 'DM Sans', 'Helvetica Neue', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: 1px;
 }
 
 #blog,
@@ -92,10 +146,6 @@ button::selection, input::selection {
 
 .address-text {
     user-select: contain;
-}
-
-.address-text:not(:active) {
-    cursor: default;
 }
 
 .fade-in {

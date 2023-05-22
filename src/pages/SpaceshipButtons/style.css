@@ -9,7 +9,7 @@
     align-items: center;
     gap: 2vw;
     height: 100%;
-    margin: 45px;
+    margin: 2vh;
     transition: margin .2s;
 }
 
@@ -27,7 +27,7 @@
     max-height: 200px;
     border: var(--border-width) solid var(--fg);
     border-radius: 10px;
-    font-size: 8vh;
+    font-size: .8em;
     font-weight: 500;
     font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     letter-spacing: var(--ltr-space);
@@ -36,6 +36,10 @@
     transition: color .4s, background-color .4s;
     cursor: pointer;
     user-select: none;
+}
+
+#spaceship-buttons nav.sn1 {
+    margin: 3vh;
 }
 
 #spaceship-buttons nav.sn1 button:not(:disabled):hover {
@@ -74,10 +78,6 @@
     color: var(--fg);
 }
 
-#spaceship-buttons nav.sn1 button {
-    line-height: 10vh;
-}
-
 #spaceship-buttons nav.sn2 button {
     padding: 16px 12px;
     font-size: .8em;
@@ -98,7 +98,7 @@
 }
 
 #spaceship-buttons nav.sn2 button:hover::before {
-	  box-sizing: border-box;
+    box-sizing: border-box;
     content: '';
     z-index: -2;
     position: absolute;
@@ -139,7 +139,6 @@
   z-index: 0;
   position: relative;
   display: flex;
-  margin: 0;
   padding: 0;
   flex-flow: row nowrap;
   justify-content: center;

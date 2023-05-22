@@ -1,6 +1,8 @@
 :root {
     --primary: #152326;
-    --main-bg: #282c34;
+/*  --main-bg: #282c34; */
+    --main-bg: #15181d;
+    --header-bg: var(--main-bg);
     --fg: #b4f4ee;
     --bg: #b6f6f0;
     --grey: #2d3236;
@@ -32,6 +34,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 105vh;
+    background-color: var(--main-bg);
 }
 
 a,
@@ -55,8 +58,46 @@ button.a:hover {
     text-decoration: underline;
 }
 
-nav {
+header {
     z-index: 10;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    z-index: 1;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 5vh 0 2vh 0;
+    padding: 3vh 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+footer,
+footer button,
+footer a {
+    text-transform: lowercase;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 0;
+    max-width: 80vw;
+    margin-top: calc(var(--nav-btn-height) + 4vh);
+}
+
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -67,7 +108,7 @@ nav {
     align-items: center;
     gap: 2vw;
     padding: var(--nav-padding-height) var(--nav-padding-width);
-    background-color: var(--main-bg);
+    background-color: var(--header-bg);
 }
 
 nav button,
@@ -120,37 +161,6 @@ nav a.button:focus::after {
     height: var(--brdr-width);
     opacity: 1;
     transform: scale(1);
-}
-
-footer {
-    z-index: 1;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    margin: 5vh 0 2vh 0;
-    padding: 3vh 0;
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-}
-
-footer,
-footer button,
-footer a {
-    text-transform: lowercase;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    gap: 0;
-    max-width: 80vw;
-    margin-top: calc(var(--nav-btn-height) + 4vh);
 }
 
 #home.title {
