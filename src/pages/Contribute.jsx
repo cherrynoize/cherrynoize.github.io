@@ -34,6 +34,8 @@ function Address(props) {
 }
 
 export default function Contacts() {
+  const copyTitle = "Double click to copy";
+
   return (
     <section id="contribute">
       <div className="panel-container">
@@ -52,16 +54,16 @@ export default function Contacts() {
               PayPal.me/cherrynoize
             </Address>
           </a>
-          <Address token='eth' title="Click twice to copy" copy>
+          <Address token='eth' title={copyTitle} copy>
             0x5938C4DA9002F1b3a54fC63aa9E4FB4892DC5aA8
           </Address>
-          <Address token='sol' title="Click twice to copy" copy>
+          <Address token='sol' title={copyTitle} copy>
             G77bErQLYatQgMEXHYUqNCxFdUgKuBd8xsAuHjeqvavv
           </Address>
-          <Address token='bnb' title="Click twice to copy" copy>
+          <Address token='bnb' title={copyTitle} copy>
             0x0E0eAd7414cFF412f89BcD8a1a2043518fE58f82
           </Address>
-          <Address token='lunc' title="Click twice to copy" copy>
+          <Address token='lunc' title={copyTitle} copy>
             terra1n5sm6twsc26kjyxz7f6t53c9pdaz7eu6zlsdcy
           </Address>
           <h5>
