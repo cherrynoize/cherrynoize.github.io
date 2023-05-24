@@ -72,9 +72,9 @@ export default function Contacts() {
         </div>
 
         <Caption>
-          Please feel free to contact me about any feedback or
-          request. If you find a bug in an application on code snippet,
-          first consider opening a public issue or pull request instead.
+          Feel free to contact me if you have any feedback or
+          request. If you find a bug in a repo or app,
+          please consider opening a public issue or pull request instead.
         </Caption>
       </div>
     </section>
