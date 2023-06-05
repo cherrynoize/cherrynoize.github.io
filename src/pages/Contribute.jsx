@@ -54,6 +54,11 @@ export default function Contacts() {
               PayPal.me/cherrynoize
             </Address>
           </a>
+          <a target="_blank" rel="noreferrer" href="https://distrokid.com/vip/seven/4745076">
+            <Address token='dstr'>
+              Get 7% off of DistroKid with my referral
+            </Address>
+          </a>
           <Address token='eth' title={copyTitle} copy>
             0x5938C4DA9002F1b3a54fC63aa9E4FB4892DC5aA8
           </Address>
