@@ -5,6 +5,19 @@ button::selection, input::selection {
     background-color: #a1bfde;
 }
 
+h5 {
+    font-size: .75em;
+    font-weight: 300;
+    font-family: 'Ubuntu', 'Lato', 'DM Sans', 'Helvetica Neue', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+p {
+    font-size: .8em;
+    font-weight: 300;
+    font-family: 'Ubuntu', 'Lato', 'DM Sans', 'Helvetica Neue', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: .2px;
+}
+
 header #navbar {
     transition: box-shadow .2s;
 }
@@ -16,7 +29,10 @@ header.active #navbar {
 .panel-container {
     position: relative;
     display: flex;
-    align-items: flex-start;
+}
+
+.panel-container .header {
+    margin: 1.5em 0;
 }
 
 .panel {
@@ -48,18 +64,6 @@ header.active #navbar {
     right: 3vw;
 }
 
-.panel h5 {
-    font-weight: 300;
-    font-family: 'Ubuntu', 'Lato', 'DM Sans', 'Helvetica Neue', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-}
-
-.panel p {
-    font-size: .8em;
-    font-weight: 300;
-    font-family: 'Ubuntu', 'Lato', 'DM Sans', 'Helvetica Neue', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    letter-spacing: .2px;
-}
-
 .caption {
     display: flex;
     flex-flow: column nowrap;
@@ -67,8 +71,7 @@ header.active #navbar {
     align-items: stretch;
     text-align: justify;
     border: 1px solid #cccccc7b;
-    border-radius: 1px;
-    padding: .5em 1.5em;
+    border-radius: 3px;
     margin: 2vh 0;
 }
 
@@ -96,6 +99,7 @@ header.active #navbar {
 #blog .entry {
     align-items: stretch;
     overflow: hidden;
+    text-align: justify;
 }
 
 #blog .entry,
@@ -123,26 +127,29 @@ header.active #navbar {
     flex-direction: row;
     justify-content: flex-start;
     gap: 1em;
-    padding: 8px 16px;
-    margin: 4px 0;
+    padding: 8px;
+    margin: 0;
     background-color: transparent;
     border: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: 1px;
     font-family: "JetBrains Mono", "Roboto Mono", "Lato", "Helvetica Neue", "Helvetica", "Arial", sans;
     transition: background .4s, padding .4s, margin .4s;
     cursor: default;
 }
 
 .address-container:hover {
-    padding: 8px 16px;
-    margin: 4px 0;
-    background-color: #333;
+    background-color: #326;
+    cursor: pointer;
 }
 
 .address-container > b {
-    font-size: .8em;
+    font-size: .6em;
     letter-spacing: 1px;
     user-select: none;
+}
+
+.address-container .address-text {
+    font-size: 1.1em;
 }
 
 .address-container:active .address-text {

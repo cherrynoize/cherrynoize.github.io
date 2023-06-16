@@ -14,7 +14,7 @@ function Post() {
     <>
       <h3>My blog</h3>
       <p>
-        I mean, I thought it would be cool, just starting a blog...
+        I mean, I just thought it would be cool, starting a blog...
         but now I realize I've got nothing to say.
       </p>
     </>

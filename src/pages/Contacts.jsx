@@ -8,19 +8,19 @@ export default function Contacts() {
       </p>
 
       <p>
-        <a href='https://www.reddit.com/user/cherrynoize'>
+        <a target="_blank" rel="noreferrer" href='https://www.reddit.com/user/cherrynoize'>
           u/cherrynoize
         </a>
       </p>
 
       <p>
-        <a href='https://twitter.com/noizecherry9987'>
+        <a target="_blank" rel="noreferrer" href='https://twitter.com/noizecherry9987'>
           @noizecherry9987
         </a>
       </p>
 
       <p>
-        <a href='https://github.com/cherrynoize'>
+        <a target="_blank" rel="noreferrer" href='https://github.com/cherrynoize'>
           github.com/cherrynoize
         </a>
       </p>

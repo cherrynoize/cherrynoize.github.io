@@ -12,19 +12,19 @@ function Address(props) {
 
   const handleClick = e => {
     // click type and title prop
-    if ((e.detail === 2) && copy)
+    if ((e.detail === 1) && copy)
       return copyToClipboard(address);
   };
 
   return (
     <p className='address-container'
       onClick={handleClick}
+      title={title}
     >
       <b>{token.toUpperCase()}</b>
       <button
         className='a address-text'
         id={token + '-address'}
-        title={title}
         copy={copy}
       >
         {address}
@@ -34,15 +34,15 @@ function Address(props) {
 }
 
 export default function Contacts() {
-  const copyTitle = "Double click to copy";
+  const copyTitle = "Copy";
 
   return (
     <section id="contribute">
       <div className="panel-container">
-        <div className="panel">
-          <p>
-            If you want to show your support you can buy me a
-            Coke:
+        <div>
+          <p className="header">
+            If you want to support me you can buy me a
+            Coke on here:
           </p>
           <a target="_blank" rel="noreferrer" href="https://ko-fi.com/cherrynoize">
             <Address token='kofi'>
@@ -56,7 +56,7 @@ export default function Contacts() {
           </a>
           <a target="_blank" rel="noreferrer" href="https://distrokid.com/vip/seven/4745076">
             <Address token='dstr'>
-              Get 7% off of DistroKid with my referral
+              Get 7% off of DistroKid referral
             </Address>
           </a>
           <Address token='eth' title={copyTitle} copy>
