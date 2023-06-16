@@ -1,21 +1,30 @@
 /* --< desktop >-- */
 @media screen and (min-width: 1100px) {
   .panel-container {
-    gap: 15%;
+    align-items: flex-start;
   }
 
   .panel {
-    width: 42vw;
+    min-width: 40vw;
   }
 
   .caption {
     width: 12vw;
     min-height: 30vh;
+    padding: .5em 2em;
   }
 
   .panel-container .caption {
       position: absolute;
       top: 0;
       right: -20vw;
+  }
+
+  #home.title {
+      max-width: 30vw;
+  }
+
+  #blog {
+      max-width: 40vw;
   }
 }

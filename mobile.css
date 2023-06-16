@@ -1,6 +1,26 @@
 /* --< mobile >-- */
 @media screen and (max-width: 1100px) {
   .panel-container {
-    gap: 10%;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 35px;
+    padding: 2%;
+  }
+
+  .panel {
+    min-width: 80vw;
+  }
+
+  .caption {
+    width: 75%;
+    padding: .5em 2.5em;
+  }
+
+  #home.title {
+      max-width: 50vw;
+  }
+
+  #blog {
+      max-width: 80vw;
   }
 }
