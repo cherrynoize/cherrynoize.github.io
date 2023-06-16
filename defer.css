@@ -133,12 +133,12 @@ header.active #navbar {
     border: 1px solid transparent;
     border-radius: 1px;
     font-family: "JetBrains Mono", "Roboto Mono", "Lato", "Helvetica Neue", "Helvetica", "Arial", sans;
-    transition: background .4s, padding .4s, margin .4s;
+    transition: background .1s;
     cursor: default;
 }
 
 .address-container:hover {
-    background-color: #326;
+    background-color: #726;
     cursor: pointer;
 }
 
@@ -152,9 +152,17 @@ header.active #navbar {
     font-size: 1.1em;
 }
 
+.address-container:hover .address-text {
+    color: #caf;
+}
+
+.address-container:hover > b {
+    color: #cd0;
+}
+
 .address-container:active .address-text {
-    color: #212d3b;
     background-color: #a1bfde;
+    color: #212d3b;
 }
 
 .address-text {
