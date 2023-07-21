@@ -1,7 +1,7 @@
 import React from 'react';
 
 let blogEntries = {}
-blogEntries['main'] = toMap(require.context('./blog/main/entries/', false, /\.(jsx?)$/));
+blogEntries['main'] = toMap(require.context('./Blog/Main/Entries/', false, /\.(jsx?)$/));
 
 /* Returns map from context */
 function toMap(ctx) {
@@ -15,7 +15,7 @@ function Post() {
       <h3>My blog</h3>
       <p>
         I mean, I just thought it would be cool, starting a blog...
-        but now I realize I've got nothing to say.
+        but now I realize I&apos;ve got nothing to say.
       </p>
     </>
   )

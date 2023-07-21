@@ -1,6 +1,6 @@
 import React from 'react';
 import './playground.css';
-import Main from './SpaceshipButtons/Main.jsx';
+import Main from '../components/CoolShit/SpaceshipButtons/Main.jsx';
 
 export default function CoolStuff() {
   return (
